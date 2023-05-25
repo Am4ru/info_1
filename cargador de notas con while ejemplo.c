@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(int argc, char *argv[]) {
-	int contador = 10;
+	int contador = 3;
 	int nota;
 	float acumulado = 0, promedio;
 	
@@ -14,7 +14,7 @@ int main(int argc, char *argv[]) {
 		
 	}
 	
-	promedio =acumulado / 10.;
+	promedio =acumulado / 3.;
 	
 	printf("el promedio es %f\n", promedio);
 	return 0;

@@ -2,16 +2,14 @@
 
 int main(int argc, char *argv[]) {
 	
-	int c;
+	int c = 1;
 	int cal;
-	float tl , prom;
+	float tl = 0 , prom;
 	
-	tl = 0;
-	c = 1;
 	
 	// incializacion de la operacion 
 		
-		while ( c <= 10 ) {
+		while ( c <= 3 ) {
 			
 			printf ( "introduzca la calificacion: " );
 				scanf ( "%d" , &cal );
@@ -19,7 +17,7 @@ int main(int argc, char *argv[]) {
 						c = c+1;
 		}
 		
-		prom =  tl / 10;
+		prom =  tl / 3;
 		
 		printf ( "el promedio del grupo es %f\n" , prom );
 	
