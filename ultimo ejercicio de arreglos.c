@@ -1,8 +1,8 @@
 #include <stdio.h>
-
+#define TAM 3000
 int main(int argc, char *argv[]) {
 int i, n;
-int arreglo[TAM]
+int arreglo[TAM];
 	
 	printf("ingrese la cantidad de elementos: ");
 	scanf("%d", &n);
