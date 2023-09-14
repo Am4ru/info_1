@@ -1,23 +1,15 @@
-    //segundo programa en C papaaaaa!!!
 #include <stdio.h>
 
-int main(void) {
-	int numero1;
-	int numero2;
-	int suma;
-	int resta;
+int main(int argc, char *argv[]) {
 	
-	printf("ingrese el primer numero: ");
-	scanf("%d", &numero2);
+	float nota = 9;
+	float * pnota;
 	
-	printf("ingrese el segundo numero: ");
-	scanf("%d", &numero2);
-	// a+b=c
-	suma = numero1 + numero2;
+	pnota = &nota;
 	
-	printf("La suma es: &d", suma); 
+	printf("el valor es: %f\n", nota);
+	printf("el valor es: %p\n", pnota);
 	
-	resta = numero1 - numero2;
-	printf("La resta es: &d", resta);
 	return 0;
 }
+
