@@ -34,6 +34,10 @@ int main(int argc, char *argv[]) {
 				temp = lista[j][1];
 				lista[j][1] = lista[j+1][1];
 				lista[j+1][1] = temp;
+				
+				temp = lista[j][0];
+				lista[j][0] = lista[j+1][0];
+				lista[j+1][0] = temp;
 			}
 		}
 	}
@@ -44,7 +48,7 @@ int main(int argc, char *argv[]) {
 	
 	for(int i=0; i<tam; i++){
 		for(int j=0; j<COLS; j++){
-			printf("%d", lista[i][j]);
+			printf("%d\t", lista[i][j]);
 		}
 		printf("\n");
 	}
