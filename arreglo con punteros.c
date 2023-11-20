@@ -15,6 +15,10 @@ void imprimir_arreglo(int *arreglo, int tam)
 	}
 }
 
+int tamanio(int *arreglo){
+	return sizeof(arreglo);
+}
+
 int main(void) {
 	
 	int uuid[TAM] = {0};
@@ -25,6 +29,9 @@ int main(void) {
 	inicializar_arreglo_con_num(puid, TAM, 30);
 	
 	imprimir_arreglo(puid, TAM);
+	
+	printf("tamaño en bytes de arreglo: %d y en bytes: %d\n",sizeof(uuid), tamanio(puid));
+	
 	
 	
 	return 0;
